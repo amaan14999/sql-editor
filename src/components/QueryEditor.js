@@ -6,7 +6,7 @@ import {
   getAllFlightDetails,
   getAirlineAndAirports,
   getAirlineNamesAndNumbers,
-} from "../assets/Queries"; // Update path as necessary
+} from "../assets/Queries";
 
 const QueryEditor = () => {
   const { query, setQuery, queryHistory, setQueryHistory } =
@@ -35,12 +35,28 @@ const QueryEditor = () => {
         return;
     }
 
-    // Add query to history only if it's valid
     setQueryHistory({
       ...queryHistory,
       outputData: result,
       history: [...queryHistory.history, query],
     });
+  };
+
+  const clearQuery = () => {
+    setQuery("");
+  };
+
+  const saveQuery = () => {
+    if (query && !queryHistory.saved.includes(query)) {
+      setQueryHistory({
+        ...queryHistory,
+        saved: [...queryHistory.saved, query],
+        history: queryHistory.history,
+        outputData: queryHistory.outputData,
+      });
+    } else {
+      alert("Cannot save empty or duplicate query.");
+    }
   };
 
   return (
@@ -59,7 +75,11 @@ const QueryEditor = () => {
           autocompletion: true,
         }}
       />
-      <button onClick={executeQuery}>Run Query</button>
+      <div className="editor-buttons">
+        <button onClick={executeQuery}>Run Query</button>
+        <button onClick={clearQuery}>Clear</button>
+        <button onClick={saveQuery}>Save</button>
+      </div>
     </div>
   );
 };
