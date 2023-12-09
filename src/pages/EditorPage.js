@@ -1,13 +1,20 @@
 import React from "react";
-import QueryEditor from "../components/QueryEditor"; // Update the path as necessary
-import Output from "../components/Output"; // Update the path as necessary
+import QueryEditor from "../components/QueryEditor";
+import Output from "../components/Output";
+import Sidebar from "../components/Sidebar";
+import { EditorProvider } from "../context/EditorContext";
 
 const EditorPage = () => {
   return (
-    <div className="editor-page">
-      <QueryEditor />
-      <Output />
-    </div>
+    <EditorProvider>
+      <div className="editor-page">
+        <Sidebar />
+        <div className="editor-content">
+          <QueryEditor />
+          <Output />
+        </div>
+      </div>
+    </EditorProvider>
   );
 };
 

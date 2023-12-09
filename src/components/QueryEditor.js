@@ -1,4 +1,3 @@
-// QueryEditor.js
 import React, { useContext } from "react";
 import CodeMirror from "@uiw/react-codemirror";
 import { sql } from "@codemirror/lang-sql";
@@ -19,7 +18,9 @@ const QueryEditor = () => {
 
   const executeQuery = () => {
     let result;
-    switch (query.trim().toLowerCase()) {
+    const lowerCaseQuery = query.trim().toLowerCase();
+
+    switch (lowerCaseQuery) {
       case "select * from flightdetails;":
         result = getAllFlightDetails();
         break;
@@ -34,6 +35,7 @@ const QueryEditor = () => {
         return;
     }
 
+    // Add query to history only if it's valid
     setQueryHistory({
       ...queryHistory,
       outputData: result,
