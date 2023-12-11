@@ -54,7 +54,7 @@ const EditorProvider = ({ children }) => {
         setQuery,
         queryHistory,
         setQueryHistory,
-        availableQueries: queryHistory.saved, // Add this line
+        availableQueries: queryHistory.saved,
       }}
     >
       {children}

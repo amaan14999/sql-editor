@@ -1,4 +1,9 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faDatabase,
+  faClockRotateLeft,
+} from "@fortawesome/free-solid-svg-icons";
 
 const QueryList = ({
   title,
@@ -13,7 +18,11 @@ const QueryList = ({
 
   return (
     <div className="flex flex-col gap-4 flex-grow-0 flex-shrink-0 max-h-[40vh] h-[40vh]">
-      <h3 className="font-bold text-2xl">{title}</h3>
+      <h3 className="font-bold text-2xl flex gap-2 items-center">
+        {title === "Available Queries" && <FontAwesomeIcon icon={faDatabase} />}
+        {title === "History" && <FontAwesomeIcon icon={faClockRotateLeft} />}
+        {title}
+      </h3>
       <input
         type="text"
         placeholder="Search..."

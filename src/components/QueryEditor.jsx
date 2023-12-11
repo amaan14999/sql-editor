@@ -10,6 +10,13 @@ import {
   getAirlineNamesAndNumbers,
 } from "../assets/Queries";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faPlay,
+  faXmark,
+  faFloppyDisk,
+} from "@fortawesome/free-solid-svg-icons";
+
 const QueryEditor = () => {
   const { query, setQuery, queryHistory, setQueryHistory } =
     useContext(EditorContext);
@@ -82,22 +89,19 @@ const QueryEditor = () => {
       />
       <div className="flex flex-col gap-2">
         <button
-          className="bg-green-700 px-2 py-1 rounded-md"
+          className="bg-green-700 px-4 py-1 rounded-md"
           onClick={executeQuery}
         >
-          Run Query
+          <FontAwesomeIcon icon={faPlay} /> Run
         </button>
         <button
-          className="bg-red-800 px-2 py-1 rounded-md"
+          className="bg-red-700 px-4 py-1 rounded-md"
           onClick={clearQuery}
         >
-          Clear
+          <FontAwesomeIcon icon={faXmark} /> Clear
         </button>
-        <button
-          className="bg-neutral-700 px-2 py-1 rounded-md"
-          onClick={saveQuery}
-        >
-          Save
+        <button className="bg-sky-600 px-4 py-1 rounded-md" onClick={saveQuery}>
+          <FontAwesomeIcon icon={faFloppyDisk} /> Save
         </button>
       </div>
     </div>
