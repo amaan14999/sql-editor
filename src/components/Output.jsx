@@ -26,7 +26,7 @@ const Output = () => {
       <div className="flex gap-2 pb-2">
         <button
           className={`bg-neutral-800 px-2 py-1 text-lg rounded-md hover:bg-neutral-600 duration-200 transition-colors ${
-            activeTab === "output" ? "bg-cyan-950" : ""
+            activeTab === "output" ? "!bg-cyan-950" : ""
           }`}
           onClick={() => setActiveTab("output")}
         >
@@ -34,7 +34,7 @@ const Output = () => {
         </button>
         <button
           className={`bg-neutral-800 px-2 py-1 text-lg rounded-md hover:bg-neutral-600 duration-200 transition-colors ${
-            activeTab === "schema" ? "bg-cyan-950" : ""
+            activeTab === "schema" ? "!bg-cyan-950" : ""
           }`}
           onClick={() => setActiveTab("schema")}
         >
