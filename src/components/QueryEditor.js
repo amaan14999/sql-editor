@@ -73,6 +73,8 @@ const QueryEditor = () => {
           bracketMatching: true,
           closeBrackets: true,
           autocompletion: true,
+          showHint: true,
+          lint: true,
         }}
       />
       <div className="editor-buttons">
