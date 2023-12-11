@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import CodeMirror from "@uiw/react-codemirror";
 import { sql } from "@codemirror/lang-sql";
+import { xcodeDarkInit } from "@uiw/codemirror-theme-xcode";
+
 import { EditorContext } from "../context/EditorContext";
 import {
   getAllFlightDetails,
@@ -60,13 +62,14 @@ const QueryEditor = () => {
   };
 
   return (
-    <div className="query-editor">
+    <div className="flex gap-4 bg-neutral-900 rounded-lg p-4">
       <CodeMirror
+        className="flex-1 text-base"
         value={query}
         extensions={[sql()]}
         onChange={(value) => handleQueryChange(value)}
-        height="200px"
-        theme="light"
+        height="250px"
+        theme={xcodeDarkInit()}
         basicSetup={{
           lineNumbers: true,
           foldGutter: true,
@@ -77,10 +80,25 @@ const QueryEditor = () => {
           lint: true,
         }}
       />
-      <div className="editor-buttons">
-        <button onClick={executeQuery}>Run Query</button>
-        <button onClick={clearQuery}>Clear</button>
-        <button onClick={saveQuery}>Save</button>
+      <div className="flex flex-col gap-2">
+        <button
+          className="bg-green-700 px-2 py-1 rounded-md"
+          onClick={executeQuery}
+        >
+          Run Query
+        </button>
+        <button
+          className="bg-red-800 px-2 py-1 rounded-md"
+          onClick={clearQuery}
+        >
+          Clear
+        </button>
+        <button
+          className="bg-neutral-700 px-2 py-1 rounded-md"
+          onClick={saveQuery}
+        >
+          Save
+        </button>
       </div>
     </div>
   );

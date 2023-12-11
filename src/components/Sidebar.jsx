@@ -9,7 +9,7 @@ const Sidebar = () => {
   const [searchQueryHistory, setSearchQueryHistory] = useState("");
 
   return (
-    <div className="sidebar">
+    <div className="flex-[3] flex flex-col justify-between gap-8 bg-neutral-900 p-4 rounded-lg">
       <QueryList
         title="Available Queries"
         queries={availableQueries}
@@ -17,6 +17,7 @@ const Sidebar = () => {
         setSearchQuery={setSearchQueryAvailable}
         onQuerySelect={setQuery}
       />
+      <hr className="border-neutral-800" />
       <QueryList
         title="History"
         queries={queryHistory.history}
