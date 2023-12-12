@@ -43,6 +43,7 @@ A detailed description of the problem statement is given at the end of the docum
 - Supports bracket matching, and auto-closing of brackets.
 - User can Run, Save, Clear queries from the editor
 - User can search for all available queries and query history
+- User can download the query output as a CSV file
 
 ## Tech Stack
 
