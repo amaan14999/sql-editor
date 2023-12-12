@@ -1,6 +1,7 @@
 ![atlan-sql-editor](https://socialify.git.ci/amaan14999/atlan-sql-editor/image?font=Inter&language=1&name=1&owner=1&pattern=Circuit%20Board&stargazers=1&theme=Dark)
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
 # Atlan Frontend Task - SQL Editor: QUERTY
 
