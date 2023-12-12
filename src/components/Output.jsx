@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 import { EditorContext } from "../context/EditorContext";
-import Table from "./Table"; // Adjust the import path as per your project structure
+import Table from "./Table";
 import { CSVLink } from "react-csv";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

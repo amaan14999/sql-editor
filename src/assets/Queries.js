@@ -1,5 +1,4 @@
-// Queries.js
-import flightData from "./Data"; // Ensure the data is imported correctly
+import flightData from "./Data";
 
 // Query 1: Select all flight details
 export const getAllFlightDetails = () => {
