@@ -1,3 +1,4 @@
+// Data obtained from https://www.mockaroo.com
 const flightData = [
   {
     airline_name: "Jayo",
