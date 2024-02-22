@@ -5,7 +5,7 @@
 
 # SQL Editor: QUERTY
 
-Link to the hosted app: [https://atlan-sql-editor.pages.dev](https://atlan-sql-editor.pages.dev/)
+Link to the hosted app: [https://sql-editor.itsamaan.me/](https://sql-editor.itsamaan.me/)
 
 ## Introduction
 
