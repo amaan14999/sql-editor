@@ -1,15 +1,15 @@
-![atlan-sql-editor](https://socialify.git.ci/amaan14999/atlan-sql-editor/image?font=Inter&language=1&name=1&owner=1&pattern=Circuit%20Board&stargazers=1&theme=Dark)
+![sql-editor](https://socialify.git.ci/amaan14999/atlan-sql-editor/image?font=Inter&language=1&name=1&owner=1&pattern=Circuit%20Board&stargazers=1&theme=Dark)
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
-# Atlan Frontend Task - SQL Editor: QUERTY
+# SQL Editor: QUERTY
 
 Link to the hosted app: [https://atlan-sql-editor.pages.dev](https://atlan-sql-editor.pages.dev/)
 
 ## Introduction
 
-This application is a frontend task for Atlan. It is a SQL Editor which can be used to write and execute SQL queries and to analyze the output. The application is built using <strong>ReactJS</strong>.
+This application is a SQL Editor which can be used to write and execute SQL queries and to analyze the output. The application is built using <strong>ReactJS</strong>.
 <br/>
 The application is hosted on Cloudflare Pages.
 
@@ -122,54 +122,6 @@ The results of the analysis are as follows:
 - Editor page load time and performance <strong>`FCP: 0.6s`, `LCP: 0.6s`</strong>:
   <img width="720" alt="EditorPage.jpg" src="https://github.com/amaan14999/atlan-sql-editor/assets/73187712/212c1cfb-1c42-41d2-8125-904a4771367d">
 
-## Summary of the Problem Statement
-
-### Objective
-
-- Develop a web-based SQL query display application. It should allow users to input SQL queries, choose from predefined queries, and view corresponding data tables. The application, primarily for data analysts, should be user-friendly and efficient. It's a dummy tool, so actual query processing isn't required. Focus on a smooth user experience, efficient code, and adherence to modern web development practices. Document all technical choices and optimizations in the project README.
-
-### Key Features
-
-- A space for accepting SQL queries as user inputs.
-- Functionality to display query results within the application.
-
-### Specifications
-
-- The application is a dummy tool; backend or actual query processing is not required.
-- No need for syntax validation or query engine.
-- Data displayed can be any predefined set, unrelated to the query input.
-- Include multiple queries with corresponding data tables.
-- Provide a mechanism to toggle between different queries and view their results.
-
-### User Experience
-
-- Consider features for ease of use by data analysts.
-- Plan a user-friendly layout, enhancing user flow and experience.
-
-### Technical Requirements
-
-- Use a JavaScript framework (not Vanilla JavaScript).
-- Host the code on a version control system like GitHub, GitLab, or BitBucket.
-- Deploy the application on services like Netlify or Vercel.
-- Freedom to use external libraries, mentioned in the README.
-
-### Documentation
-
-- Include in the README an overview of the project, framework and packages used, page load time, performance optimizations.
-
-### Judging Criteria
-
-- Core and advanced functionalities planning.
-- User needs consideration.
-- Feature selection rationale.
-- Layout planning and user experience enhancement.
-- Code structure, quality, and readability.
-- Application load time and performance.
-- Adherence to coding best practices.
-
-### Bonus
-
-- Efficient rendering of large data rows without browser issues.
 
 ## 👨‍💻 Contributors
 
