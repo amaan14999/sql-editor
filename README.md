@@ -24,15 +24,6 @@ A detailed description of the problem statement is given at the end of the docum
 - [Dependencies](#dependencies)
 - [Data](#data)
 - [Page Speed and Load Time](#page-speed-and-load-time)
-- [Summary of the Problem Statement](#summary-of-the-problem-statement)
-  - [Objective](#objective)
-  - [Key Features](#key-features)
-  - [Specifications](#specifications)
-  - [User Experience](#user-experience)
-  - [Technical Requirements](#technical-requirements)
-  - [Documentation](#documentation)
-  - [Judging Criteria](#judging-criteria)
-  - [Bonus](#bonus)
 - [Contributors](#-contributors)
 
 ## Features
