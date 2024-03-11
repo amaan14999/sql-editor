@@ -31,7 +31,7 @@ const Navbar = () => {
         Contact
       </a>
       <a
-        href="https://github.com/amaan14999/atlan-sql-editor"
+        href="#"
         className="text-neutral-300 hover:text-cyan-400 duration-200 transition-colors"
       >
         GitHub
