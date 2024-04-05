@@ -1,5 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function HomePage() {
   const navigate = useNavigate();
@@ -10,6 +12,10 @@ function HomePage() {
 
   return (
     <div className="flex flex-col w-full h-full items-center justify-center gap-8 -mt-16">
+      <FontAwesomeIcon
+        icon={faGithub}
+        className="lg:hidden absolute top-8 right-8 text-2xl"
+      />
       <h1 className="heading text-7xl md:text-8xl font-extrabold tracking-tight text-goo goo-head">
         Querty
       </h1>
