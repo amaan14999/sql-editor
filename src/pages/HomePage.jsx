@@ -10,12 +10,11 @@ function HomePage() {
 
   return (
     <div className="flex flex-col w-full h-full items-center justify-center gap-8 -mt-16">
-      <h1 className="heading text-6xl md:text-8xl font-extrabold tracking-tight text-goo goo-head">
+      <h1 className="heading text-7xl md:text-8xl font-extrabold tracking-tight text-goo goo-head">
         Querty
       </h1>
 
-      {/* New line added here */}
-      <p className="text-center text-lg md:text-xl px-4">
+      <p className="text-center text-md md:text-xl px-4">
         Query, Create, Conquer: Your SQL Journey Begins Here. <br />
         Fast, Friendly, and Foolproof!
       </p>

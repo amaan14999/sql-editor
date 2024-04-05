@@ -9,7 +9,7 @@ const Table = ({ data }) => {
   const headers = Object.keys(data[0]);
 
   return (
-    <div className="overflow-scroll max-h-[40vh] h-[40vh]">
+    <div className="overflow-scroll overflow-x-auto max-h-[40vh] h-[40vh]">
       <table className="table-auto w-full border-collapse">
         <thead className="sticky top-0">
           <tr className="bg-neutral-800">

@@ -13,10 +13,8 @@ function App() {
         <Navbar />
         <div className="h-full">
           <Routes>
-            {/* Define your routes here */}
             <Route path="/" element={<HomePage />} />
             <Route path="/editor" element={<EditorPage />} />
-            {/* Add other routes as needed */}
           </Routes>
         </div>
       </EditorProvider>

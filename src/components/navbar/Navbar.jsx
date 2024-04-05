@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="flex mx-8 py-2 px-4 font-bold gap-48 mt-4 rounded-lg bg-neutral-900 items-center justify-center">
+    <nav className="hidden lg:flex xl:mx-auto mx-[8%] px-40 xl:px-80 py-2 font-bold mt-4 rounded-lg bg-neutral-900 items-center justify-between max-w-7xl">
       <NavLink
         to="/"
         className="text-neutral-300 hover:text-cyan-400 duration-200 transition-colors"
@@ -31,7 +31,8 @@ const Navbar = () => {
         Contact
       </a>
       <a
-        href="#"
+        target="_blank"
+        href="https://github.com/amaan14999/sql-editor"
         className="text-neutral-300 hover:text-cyan-400 duration-200 transition-colors"
       >
         GitHub
